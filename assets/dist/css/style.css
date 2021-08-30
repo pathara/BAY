@@ -1,4 +1,4 @@
-﻿/*Import Fonts CSS*/
+/*Import Fonts CSS*/
 @import url("../fonts/Fontawesome/fontawesome.css");
 @import url("../fonts/Thongterm/thongterm.css");
 @import url("../fonts/Krungsri_condensed/krungsri_condensed.css");
@@ -99,15 +99,16 @@ h4{ font-size:16px!important; line-height:27px; padding-top:16px;	}
 /*h5{ font-size:28pt;	}
 h6{ font-size:28pt;	}*/
 
-a{	  color: #FB934D;
+a, .more-details{	  color: #FB934D;
   font-family: Thongterm;
   font-size: 14px;
   letter-spacing: 0;
   border-bottom:1px #FB934D solid;
-  text-decoration:none;  
+  text-decoration:none;
+  background-color:#FFFFFF;  
 	
 }
-a:hover{
+a:hover, .more-details:hover{
 	color: #FB934D;
 	font-weight:bold;
 	text-decoration:none;
@@ -153,8 +154,8 @@ a:hover{
 .totalamount{
 	font-family: 'krungsri_condensed', sans-serif!important;
 	font-weight:bold;
-	font-size:24px!important; 
-	line-height:34px; 
+	font-size:22px!important; 
+	/*line-height:34px; */
 }
 .bottomshadow{
 	position:relative;
@@ -637,6 +638,17 @@ select > option{
 .totalamountmobile {
 	display:none;
 }
+.hide-button{
+	display:block;
+	background-image:url('../../images/icons/br_show.png');
+	background-position:center center;
+	background-repeat:no-repeat;
+	height:20px!important; 
+	width:50px!important; 
+	border:0px!important;
+	margin:20px auto 0px auto;
+}
+
 /* fix gutter */
 @media screen and (min-device-width: 1280px) and (max-device-width: 1365px) { 
     .container, .container-sm, .container-md, .container-lg, .container-xl {
@@ -647,17 +659,40 @@ select > option{
 @media (max-width: 575px) {   /* 575- Mobile */
   .bottomshadow {
   	display:none!important;
-  }
+  	}
   .hideinmobile{
 	display:none!important;
 	}
-	.totalamountmobile{
+  .totalamountmobile{
 	display:block;
 	font-size:16px;
 	font-family: 'krungsri_condensed', sans-serif!important;
 	text-align:right;
 	font-weight:bold;
+	}
+	
+   #order-details{ 
+    
+     }
+}
+
+
+@media (min-width: 576px) {   
+  	.bottomshadow { display:none!important;}
+  	  	
 
 }
+
+@media (min-width: 768px) {   
+ 	 .bottomshadow { display:block!important;}
+
+}
+
+@media (min-width: 992px) {   
+ 	.bottomshadow { display:block!important;}
+}
+
+@media (min-width: 1366px) {
+ 	.bottomshadow { display:block!important;}
 }
 
