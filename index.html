@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en" class="h-100">
   <head>
     <meta charset="utf-8">
@@ -23,7 +23,7 @@
 <!-- Begin page content -->
 <main role="main" class="flex-shrink-0">
   
-  <div class="container-xl container-lg container-md container-sm mainBG bgline overflow-hidden d-block pb-5">
+  <div class="container-xl container-lg container-md container-sm container mainBG bgline overflow-hidden d-block pb-5">
 	  
 	  <!-- TOP MERCHANT LOGO ROW -->
 	  <div class="headerlogo mainBG px-xl-5 px-lg-4 px-md-3 px-sm-2 px-1"><!--  -->
@@ -37,13 +37,19 @@
 	<div class="col-xl-3 col-lg-3 col-md-5 col-sm-12" style=" /*border:1px solid blue;"><!-- ORDER SUMMARY CARD -->
 		<div class="row d-block mx-xl-0 mx-lg-n1 mx-md-n1 mx-sm-0">
 			<div class="ordersumwidht"><!-- w-100 bg-white -->
-				<div class="col-12 borderyellow"><h3>Order Summary</h3></div>
-					<div class="row mx-xl-1 mx-lg-n11 mx-md-1 mx-0 hideinmobile ">
-							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 subhead ">Order Number</div>
-							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 ordernumber">#123456789</div>
+				<div class="col-12 mx-0 borderyellow"><h3>Order Summary</h3></div>
+					
+					
+			<!-- START ORDER DETAIL - FIRST SWAP -->
+			<div class="second-order-details" style="display:block;">
+					<div class="row mx-xl-1 mx-lg-n11 mx-md-1 mx-0">
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 subhead" >Order Number</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ordernumber">#123456789</div>
 							<div class="borderline">&nbsp;</div>
 					</div>
-        			<div class="row mx-1 hideinmobile">
+			
+			
+					<div class="row mx-1">
         					<div class="col-12 merchantname">Merchant Name</div>
         					<div class="col-12 productname">Product Name...</div>
         					<div class="col-12 productdetails"> 
@@ -51,28 +57,44 @@
         					 </div>
         			</div>
         			<div class="row mx-1"><!-- mr-xl-2  -->
-        					<div class="col-6"><a href="#">More Details</a> </div>
-        					<div class="col-6 totalamountmobile">THB 10,000.00</div>        					<br><br>
-        					<div class="borderline  hideinmobile">&nbsp;</div>        				
+        			<div class="col-6"><a class="more-details" >More Details</a> </div>
+        					<!--  <div class="col-6 totalamountmobile">THB 10,000.00</div>--> <!-- TOTAL AMOUNT HERE -->      					<br><br>
+        					<div class="borderline">&nbsp;</div>        				
         				</div>
-        			<div class="row mx-2 text-right pb-4 hideinmobile"><!-- mr-xl-2  -->
-        					<div class="col-12 total">Total Amount</div>
-        					<div class="col-12 totalamount">THB 10,000</div>
+        				
+					<div class="row mx-0 pb-4"><!-- mr-xl-2  -->
+        					<div class="col-12 total text-right">Total Amount</div>
+        					<div class="col-12 totalamount text-right">THB 10,000</div><!-- TOTAL AMOUNT HERE -->
+        					<div class="col-12">
+        						<div class="hide-button  show-hide-details">&nbsp;</div>
+        							
+        					</div>
+        			</div>
+			</div>	
+				
+        			
+        	<!-- END ORDER DETAIL - FIRST SWAP -->
+			
+			<!-- START ORDER DETAIL SECOND SWAP -->
+			<div class="second-order-details" style="display:none;">
+        			<div class="row mx-0 text-right pb-4"><!-- mr-xl-2  -->
+        					<div class="col-5 text-left" role="button" ><a class="more-details show-hide-details" >More Details</a> </div>
+             				<div class="col-7 totalamount text-right">THB 10,000</div><!-- TOTAL AMOUNT HERE -->
         					
         			</div>
         			        				
-			</div><div class="w-100 d-block bottomshadow">
-				<img class="img-fluid" alt="" height="" src="assets/images/graphics/bottom_shadow-02.png" width="100%"></div>
-			
-						
+			</div>		
 
 		</div>
-      					        					
+		<!-- END ORDER DETAIL - SECOND SWAP -->
+			
+      			<div class="w-100 d-block bottomshadow" style="left: 0px; top: -5px; height: 141px">
+				<img class="img-fluid" alt="" height="" src="assets/images/graphics/bottom_shadow-02.png" width="100%"></div>		        					
         			    				
         				&nbsp;</div>
 			
       					
-    			
+    			</div>
 	
 	 
 	
@@ -367,6 +389,25 @@ $("#same-address").click(function() {
      
      </script>
      
+          <script type="text/javascript">
+     	$("#shippingaddressbox").hide();
+$("#same-address").click(function() {
+    if($(this).is(":checked")) {
+        $("#shippingaddressbox").hide();
+    } else {
+        $("#shippingaddressbox").show();
+    }
+});
      
+     </script>
+     
+     <script>
+$(document).ready(function(){
+  $(".show-hide-details").click(function(){
+    $(".second-order-details").toggle(500);
+  });
+});
+</script>
+	
   </body>
 </html>
