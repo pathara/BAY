@@ -137,7 +137,7 @@
 							
 							<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
             					<label for="cardnumber" >Card Number</label>
-            					<input class="form-control" id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="" value="" required  >
+            					<input class="form-control" name="number" id="number" inputmode="numeric" value="" required  >
             					<div class="invalid-feedback">
               							Valid Card Number is required.
             					</div>
@@ -146,7 +146,7 @@
           					
           					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mb-3">
             					<label for="expirationdate">Expiration Date</label>
-            					<input class="form-control" id="expirationdate" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="" value="" required >
+            					<input class="form-control" name="expiry"id="expiry" type="text" inputmode="numeric" placeholder="" value="" required >
            						 <div class="invalid-feedback">
               							Valid Expiration Date is required.
             					</div>
@@ -154,7 +154,7 @@
           					<div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 col-6 mb-3">
             					<label for="securitycode">CVV</label>
             					<div class="wrapper">
-            							<input class="form-control" id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="" value="" required>
+            							<input class="form-control" name="cvc" id="cvc"type="text" inputmode="numeric" placeholder="" value="" required>
             							<a role="button" href="#"><img src="assets/images/icons/cvv_remark.png" style=" position:absolute; top:38px; right:26px;"></a>
             							<div class="invalid-feedback">
               							Valid CVV is required.
@@ -170,7 +170,7 @@
           					
           					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
             					<label for="name">Cardholder Name</label>
-            					<input id="name" maxlength="20" type="text" class="form-control" placeholder="" value="" required>
+            					<input name="name"id="name" type="text" class="form-control" placeholder="" value="" required>
            						 <div class="invalid-feedback">
               							Valid Card Number is required.
             					</div>
@@ -262,16 +262,16 @@ $("#same-address").click(function() {
     },
 
     // Default placeholders for rendered fields - optional
-    placeholders: {
-        number: '•••• •••• •••• ••••',
-        name: 'Full Name',
-        expiry: '••/••',
-        cvc: '•••'
-    },
+  //  placeholders: {
+   //     number: '•••• •••• •••• ••••',
+    //    name: 'Full Name',
+     //   expiry: '••/••',
+     //   cvc: '•••'
+   // },
 
-    masks: {
-        cardNumber: '•' // optional - mask card number
-    },
+  //  masks: {
+  //      cardNumber: '•' // optional - mask card number
+  //  },
 
     // if true, will log helpful messages for setting up Card
     debug: false // optional - default false
