@@ -23,7 +23,7 @@
   --success: #6F5F5E;/*#28a745*/
   --info: #17a2b8;
   --warning: #ffc107;
-  --danger: #ffd400;/*#dc3545*/
+  --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
   --breakpoint-xs: 0;
@@ -2291,8 +2291,8 @@ textarea.form-control {
 }
 
 .was-validated .custom-control-input:valid:checked ~ .custom-control-label::before, .custom-control-input.is-valid:checked ~ .custom-control-label::before {
-  border-color: #34ce57;
-  background-color: #34ce57;
+  border-color:#FFD400;/* #34ce57;*/
+  background-color:#FFD400;/* #34ce57;*/
 }
 
 .was-validated .custom-control-input:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
@@ -3860,7 +3860,7 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
 }
 
 .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: rgba(0, 123, 255, 0.5);
+  background-color:rgba(255, 212, 0, 0.5);/* rgba(0, 123, 255, 0.5);*/
 }
 
 .custom-switch {

@@ -1,4 +1,4 @@
-/*Import Fonts CSS*/
+﻿/*Import Fonts CSS*/
 @import url("../fonts/Fontawesome/fontawesome.css");
 @import url("../fonts/Thongterm/thongterm.css");
 @import url("../fonts/Krungsri_condensed/krungsri_condensed.css");
@@ -40,6 +40,13 @@
 
 body{
 	background-color:#FFD400;/*BAY YELLOW*/
+}
+.wrapper{
+	  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
 }
 
 .mainBG{
@@ -125,7 +132,7 @@ a:hover, .more-details:hover{
 	font-weight:bold;
 	text-align:right!important;
 }
-.ordersumwidht, .billingaddressbox{
+.ordersumwidht, .billingaddressbox, .cardselectbox{
 	width:100%!important;
 	background-color: #fff !important;
 	box-shadow: 1px 2px 8px 0 rgba(35,19,18,0.2);
@@ -359,8 +366,10 @@ select > option{
 
 /* PRIMARY BUTTON */
 .button-large-primary-yellow{
-		height: 44px!important;
-    	width: 170px!important;
+		height: 44px;
+    	max-width: 170px;
+    	width:inherit;
+    	box-sizing: border-box;
     	font-family:'krungsri_condensed'!important;
     	 	
 }
@@ -370,9 +379,10 @@ select > option{
 	border-width: 0px;
     border-radius: 3px;
     background-color: #FFD400!important;
-    height: 44px!important;
-    width: 170px!important;
-
+    height: 44px;
+    	max-width: 170px;
+    	width:inherit;
+    	box-sizing: border-box;
     color: #554242!important;
   	font-size: 16px;
     font-weight: bold;
@@ -407,8 +417,10 @@ select > option{
 
 
 .button-large-primary-brown{
-		height: 44px!important;
-    	width: 170px!important;
+		height: 44px;
+    	max-width: 170px;
+    	width:inherit;
+    	box-sizing: border-box;
     	font-family:'krungsri_condensed'!important;
 }
 .button-large-primary-brown, .button-large-primary-brown:visited {
@@ -424,8 +436,10 @@ select > option{
     letter-spacing: 0;
     line-height: 27px;
     text-align: center;
-    height: 44px!important;
-    	width: 170px!important;
+   height: 44px;
+    	max-width: 170px;
+    	width:inherit;
+    	box-sizing: border-box;
     
 }
 .button-large-primary-brown:hover{
@@ -457,12 +471,18 @@ select > option{
 
 .button-small-primary-yellow{
 		height: 30px;
-    	width: 170px;
+    	max-width: 170px;
+    	width:inherit;
+    	box-sizing: border-box;
     	font-family:krungsri_condensed!important;
 }
 .button-short-primary-yellow{
 		height: 30px;
-    	width: 112px;
+    	max-width: 170px;
+    	width:inherit;
+    	box-sizing: border-box;
+    	font-family:krungsri_conde
+    	box-sizing: border-box;
     	font-family:krungsri_condensed!important;
 }
 
@@ -480,6 +500,10 @@ select > option{
     letter-spacing: 0;
     line-height: 27px;
     text-align: center;    
+    height: 30px;
+    	max-width: 170px;
+    	width:inherit;
+    	box-sizing: border-box;
 }
 .button-small-primary-yellow:hover,
 .button-short-primary-yellow:hover {
@@ -513,7 +537,8 @@ select > option{
 
 .button-large-secondary-normal{
 		height: 44px;
-    	width: 170px;
+    	max-width: 170px;
+    	width:inherit;
     	box-sizing: border-box;
     	font-family:'krungsri_condensed'!important;
 }
@@ -529,7 +554,11 @@ select > option{
     font-weight: bold;
     letter-spacing: 0;
     line-height: 27px;
-    text-align: center;    
+    text-align: center; 
+    height: 44px;
+    	max-width: 170px;
+    	width:inherit;
+   
 }
 .button-large-secondary-normal:hover{
 	border: 1px solid #554242!important; /*C7C7C7*/
@@ -562,7 +591,10 @@ select > option{
 
 .button-small-secondary-normal{
 		height: 30px;
-    	width: 170px;
+    	max-width: 170px;
+   	 	width:inherit;
+    	box-sizing: border-box;
+    	
     	font-family:krungsri_condensed!important;
     	font-size: 16px;
   		font-weight: bold;
@@ -572,7 +604,10 @@ select > option{
 }
 .button-short-secondary-normal{
 		height: 30px;
-    	width: 112px;
+    	max-width: 112px;
+    	width:inherit;
+    	box-sizing: border-box;
+
     	font-family:krungsri_condensed!important;
     	font-size: 16px;
   		font-weight: bold;
@@ -611,7 +646,6 @@ select > option{
 
 }
 
-
 /*
 .button-large-primary-yellow-no > .button-text {
   height: 27px;
@@ -625,6 +659,52 @@ select > option{
   text-align: center;
 }*/
 
+
+
+/* PAYMENT METHODS ONLY ON MOBILE */
+.method1, method2{
+	
+}
+label.yellow{
+	font-family: 'krungsri_condensed', sans-serif!important;
+	font-weight:bold;
+	font-size:16px;
+	line-height:27px;
+	text-align:left;
+	color:#554242;	
+	display:block;
+  	height: 48px;
+  	width:100%;
+  	padding-left:64px;
+  	padding-top:10px;
+	border:2px white solid;
+	
+	background-image:url('../../images/icons/radio_button.png');
+	background-position:10 center;
+	background-repeat:no-repeat;	
+
+  	box-shadow: 0px 0px 6px 0 rgba(35,19,18,0.2)!important;
+  	-webkit-box-shadow: 0px 0px 6px 0 rgba(35,19,18,0.2)!important;
+  	-moz-box-shadow: 0px 0px 6px 0 rgba(35,19,18,0.2)!important;
+  
+}
+
+input[name=paymentmethods]:checked {
+	
+    }
+
+input[name=paymentmethods]:checked + label.yellow {
+		background-image:url('../../images/icons/radio_checked.png');
+	background-position:10 center;
+	background-repeat:no-repeat;	
+
+   border:2px #FFD400 solid;
+   box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
+  	-webkit-box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
+  	-moz-box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
+
+  
+}
 
 .mx-56px {
   margin-left:56px !important;
@@ -657,12 +737,15 @@ select > option{
 }
 
 @media (max-width: 575px) {   /* 575- Mobile */
+	
+	body{
+	background-color:#FFFFFF;
+	}
+
   .bottomshadow {
   	display:none!important;
   	}
-  .hideinmobile{
-	display:none!important;
-	}
+      
   .totalamountmobile{
 	display:block;
 	font-size:16px;
@@ -670,22 +753,28 @@ select > option{
 	text-align:right;
 	font-weight:bold;
 	}
-	
-   #order-details{ 
-    
-     }
+      .fixed-bottom-in-mobile {
+  		position: fixed;
+ 	 	right: 0;
+  		bottom: 0;
+  		left: 0;
+  		z-index: 1030;
+	}
+	.cardselectbox{
+		box-shadow: 0px 0px 0px 0 rgba(0,0,0,0);
+}
+
+
 }
 
 
 @media (min-width: 576px) {   
   	.bottomshadow { display:none!important;}
-  	  	
 
 }
 
 @media (min-width: 768px) {   
  	 .bottomshadow { display:block!important;}
-
 }
 
 @media (min-width: 992px) {   
@@ -694,5 +783,7 @@ select > option{
 
 @media (min-width: 1366px) {
  	.bottomshadow { display:block!important;}
+ 	
+
 }
 
