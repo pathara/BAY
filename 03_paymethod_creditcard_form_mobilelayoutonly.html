@@ -101,37 +101,16 @@
 	
 	 
 	
-	<div class="col-xl-9 col-lg-9 col-md-7 col-sm-12"style="/*border:1px red solid;"><!-- Payment method select -->
+	<div class="form-container active col-xl-9 col-lg-9 col-md-7 col-sm-12"style="/*border:1px red solid;"><!-- Payment method select -->
+		
+	<div class="card-wrapper"></div>
 	
-	<div class="row mx-1">
-                    
-                     <div class style="width: 100%;  max-width: 350px;  margin: 50px auto;">
-        <div class="card-wrapper"></div>
-
-        <div class="form-container active">
-            <form action="">
-                <input placeholder="Card number" type="tel" name="number" id="number" >
-                <input placeholder="Full name" type="text" name="name"id="name">
-                <input placeholder="MM/YY" type="tel" name="expiry"id="expiry">
-                <input placeholder="CVC" type="number" name="cvc"id="cvc">
-            </form>
-        </div>
-    </div>
-
-                    </div>
 	
-		 <form class="needs-validation" novalidate>	
+		 <form class="needs-validation" action="" novalidate>	
     			<div class="row d-block mx-xl-0 mx-lg-n1 mx-md-n1 mx-sm-0">
 			<div class="cardselectbox py-2"><!-- w-100 bg-white -->
 				<div class="col-12 ml-1"><h3>Payment Methods</h3></div>
 				
-					         
-                           
-                       
-                    
-                   
-					
-					
 					
 					<div class="row mx-1">
 							
@@ -146,7 +125,7 @@
           					
           					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mb-3">
             					<label for="expirationdate">Expiration Date</label>
-            					<input class="form-control" name="expiry"id="expiry" type="text" inputmode="numeric" placeholder="" value="" required >
+            					<input class="form-control" name="expiry"id="expiry" type="text" inputmode="numeric" placeholder="MM/YY" value="" required >
            						 <div class="invalid-feedback">
               							Valid Expiration Date is required.
             					</div>
@@ -154,7 +133,7 @@
           					<div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 col-6 mb-3">
             					<label for="securitycode">CVV</label>
             					<div class="wrapper">
-            							<input class="form-control" name="cvc" id="cvc"type="text" inputmode="numeric" placeholder="" value="" required>
+            							<input class="form-control" name="cvc" id="cvc"type="text" inputmode="numeric" placeholder="CVV" value="" required>
             							<a role="button" href="#"><img src="assets/images/icons/cvv_remark.png" style=" position:absolute; top:38px; right:26px;"></a>
             							<div class="invalid-feedback">
               							Valid CVV is required.
@@ -170,7 +149,7 @@
           					
           					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
             					<label for="name">Cardholder Name</label>
-            					<input name="name"id="name" type="text" class="form-control" placeholder="" value="" required>
+            					<input name="name"id="name" type="text" class="form-control" placeholder="Cardholder NAme" value="" required>
            						 <div class="invalid-feedback">
               							Valid Card Number is required.
             					</div>
