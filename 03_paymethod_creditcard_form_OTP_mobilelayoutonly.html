@@ -181,7 +181,6 @@ function includeHTML() {
               							Valid CVV is required.
             					</div>
             					</div>
-            					<div include-html="cvv_sample.html"></div>   
             					
             					
            						 
@@ -198,7 +197,29 @@ function includeHTML() {
             					</div>
           					</div>
 
+							  						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-4 col-4 mb-3 pr-1 pr-sm-3 pr-md-3 pr-lg-3">
+            							<label for="country">Area Code</label>
+            								<select class="d-block w-100 select-shadow" id="country" required>
+              										<option value="">+66</option>
+              										<option>+66</option>
+             										<option>+69</option>
+              										<option>+112</option>
+            								</select>
+            					<div class="invalid-feedback">
+            							  Please select a valid area code
+            					</div>
 
+            						
+            						</div>
+            						<div class="col-xl-6 col-lg-6 col-md-6  col-sm-8 col-8 mb-3 pl-1 pl-sm-3 pl-md-3 pl-lg-3">
+            							<label for="mobile">Mobile Number</label>
+            								<input type="text" class="form-control" id="mobile" placeholder="Please fill Mobile Number" value="">
+           						 			<div class="invalid-feedback">
+              										Please fill a valid Mobile Number.
+            								</div>
+            						
+            						</div>
+            				
 
 
           			</div>
@@ -230,7 +251,7 @@ function includeHTML() {
 </main>
 
 
-
+<div include-html="cvv_sample.html"></div>   
 
 
 
@@ -261,7 +282,7 @@ $(document).ready(function(){
   });
 });
 </script>
-	
+<script src="creditcard_script"></script>	
 
 <script>
 $(document).ready(function(){

@@ -181,7 +181,6 @@ function includeHTML() {
               							Valid CVV is required.
             					</div>
             					</div>
-            					<div include-html="cvv_sample.html"></div>   
             					
             					
            						 
@@ -198,10 +197,22 @@ function includeHTML() {
             					</div>
           					</div>
 
+							 
+          					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
+            				
+			<div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="remember-card" checked="" name="" style="width: 28px; height: 28px">
+          <label class="custom-control-label remembercard" for="remember-card">Remember This Card</label>
+        	</div>
+			</div>
+
+          					</div>
+ 						
+            						
+            				
 
 
-
-          			</div>
+          			
           			<div class="row mx-xl-1 mx-lg-1 mx-md-1 mx-sm-1 mx-1 my-3 mb-3"><!-- IMPORTANT THE SUBMIT(NEXT) BUTTON WILL GO TO INDIVIDUAL METHOD PAYMENT PAGE (MOBILE LAYOUT ONLY) -->
       						<div class="col-6"><button class="button-large-secondary-normal float-left" type="submit">Back</button></div>
       						<div class="col-6"><button class="button-large-primary-yellow float-right" type="submit">Next</button></div>
@@ -230,7 +241,7 @@ function includeHTML() {
 </main>
 
 
-
+<div include-html="cvv_sample.html"></div>   
 
 
 
@@ -261,7 +272,7 @@ $(document).ready(function(){
   });
 });
 </script>
-	
+
 
 <script>
 $(document).ready(function(){

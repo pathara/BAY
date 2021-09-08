@@ -12,15 +12,12 @@
 	<link href="assets/dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles -->
-   
     <link rel="stylesheet" href="assets/dist/css/style.css" type="text/css" charset="utf-8">    
-    
-	
          
-       
+        
   </head>
   
-  <script>
+   <script>
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
@@ -56,7 +53,7 @@ function includeHTML() {
 <!-- Begin page content -->
 <main role="main" class="flex-shrink-0">
   
-  <div class="container-xl container-lg container-md container-sm container mainBG bgline overflow-hidden d-block pb-0 pb-sm-5 mb-5 mb-sm-5 mb-xl-0 mb-lg-0 mb-md-0">
+  <div class="container-xl container-lg container-md container-sm container mainBG bgline overflow-hidden d-block pb-0 pb-sm-5">
 	  
 	  <!-- TOP MERCHANT LOGO ROW -->
 	  <div class="headerlogo mainBG px-xl-5 px-lg-4 px-md-3 px-sm-2 px-1"><!--  -->
@@ -74,7 +71,7 @@ function includeHTML() {
 					
 					
 			<!-- START ORDER DETAIL - FIRST SWAP -->
-			<div class="second-order-details" style="display:none;">
+			<div class="second-order-details" style="display:block;">
 					<div class="row mx-xl-1 mx-lg-n11 mx-md-1 mx-0">
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 subhead" >Order Number</div>
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ordernumber">#123456789</div>
@@ -109,7 +106,7 @@ function includeHTML() {
         	<!-- END ORDER DETAIL - FIRST SWAP -->
 			
 			<!-- START ORDER DETAIL SECOND SWAP -->
-			<div class="second-order-details" style="display:block;">
+			<div class="second-order-details" style="display:none;">
         			<div class="row mx-0 text-right pb-4"><!-- mr-xl-2  -->
         					<div class="col-5 text-left" role="button" ><a class="more-details show-hide-details" >More Details</a> </div>
              				<div class="col-7 totalamount text-right">THB 10,000</div><!-- TOTAL AMOUNT HERE -->
@@ -131,32 +128,54 @@ function includeHTML() {
 	
 	 
 	
-	<div class="form-container active col-sm-12 col-md-7 col-lg-9 col-xl-9 px-0 px-sm-3 px-md-3 "><!-- Payment method select col-xl-9 col-lg-9 col-md-7 col-sm-12 mx-0 mx-sm-0-->
-	
+	<div class="col-xl-9 col-lg-9 col-md-7 col-sm-12"style="/*border:1px red solid;"><!-- Payment method select -->
+		 <form class="needs-validation" novalidate>	
+    			<div class="row d-block mx-xl-0 mx-lg-n1 mx-md-n1 mx-sm-0  ">
 			<div class="cardselectbox py-2"><!-- w-100 bg-white -->
-				<div class="row d-block mx-xl-0 mx-lg-n0 mx-md-n0 mx-sm-0 mx-0">
-					<form class="needs-validation" action="" novalidate>
-					
-					<div class="row d-block mx-xl-0 mx-lg-n1 mx-md-n1 mx-sm-0">
-							<div class="col-12 ml-3"><h3>Payment Methods</h3></div>
-							<div class="card-wrapper pb-3"></div>
-							<div class="col-12 d-flex">
-								<div class="card-banner  m-auto" >							
-									<img alt="visa" height="22" src="assets/images/cards/visa.svg" width="24">
-									<img alt="mastercard" height="22" src="assets/images/cards/mastercard.svg" width="24">
-									<img alt="jcb" height="22" src="assets/images/cards/jcb.svg" width="24">
-									<img alt="cup" height="22" src="assets/images/cards/cup.svg" width="24">
-									<img alt="promptcard" height="22" src="assets/images/cards/promptcard.svg" width="24">
-									<img alt="thaipayment" height="22" src="assets/images/cards/thaipayment.svg" width="24">
+				<div class="col-12 ml-1"><h3>Payment Methods</h3></div>
+					<div class="row mx-1 mb-2">
+							<div class="col mx-n2 mb-2">
+            						    <input type="radio" name="paymentmethods" id="creditcards" onchange="on_change(this)" checked="checked" value="" hidden>
+    									<label class="yellow-desktop" for="creditcards"><span class=""><img alt="card" height="32" src="assets/images/icons/method_card.png" width="32"></span><br><span class="col">Cards</span></label>
+            				</div>
+          					<div class="col   mx-n2  mb-2">
+            							<input type="radio" name="paymentmethods" id="mobilebanking" onchange="on_change(this)" hidden>
+    									<label class="yellow-desktop" for="mobilebanking"><span class=""><img alt="card" height="32" src="assets/images/icons/method_mobile.png" width="32"></span><br><span class="">Mobile Banking</span></label>
+            				</div>
+            				<div class="col   mx-n2  mb-2">
+            						    <input type="radio" name="paymentmethods" id="internetbanking" onchange="on_change(this)" hidden>
+    									<label class="yellow-desktop" for="internetbanking"><span  class=""><img alt="card" height="32" src="assets/images/icons/method_internet.png" width="32"></span><br><span class="">Internet Banking</span></label>
+            				</div>
+          					<div class="col   mx-n2  mb-2">
+            							<input type="radio" name="paymentmethods" id="qrcode" onchange="on_change(this)" hidden>
+    									<label class="yellow-desktop" for="qrcode"><span  class=""><img alt="card" height="32" src="assets/images/icons/method_qr.png" width="32"></span><br><span class="">QR</span></label>
+            				</div>
+            				<div class="col   mx-n2  mb-2">
+            							<input type="radio" name="paymentmethods" id="wallet" onchange="on_change(this)" hidden>
+    									<label class="yellow-desktop" for="wallet"><span  class=""><img alt="card" height="32" src="assets/images/icons/method_wallet.png" width="32"></span><br><span class="">Wallet</span></label>
+            				</div>
+          			</div>
+          			
+         <!-- TAB 001 - CREDITCARD FORM id="creditcards-tab" Default=style="display:block; -->
+         			<div class="row pt-3" id="creditcards-tab" style="display:flex;">
+         			<div class=" col-lg-6 col-md-6 col-sm-12 mt-3 ml-2 mr-n2">
+							
+							<div class="card-wrapper d-flex"></div>
+							<div class="col-12">
+								<div class="card-banner pt-3 text-center"  >							
+									<img alt="visa" src="assets/images/cards/visa.svg" >
+									<img alt="mastercard"  src="assets/images/cards/mastercard.svg" >
+									<img alt="jcb"  src="assets/images/cards/jcb.svg" >
+									<img alt="cup" src="assets/images/cards/cup.svg" >
+									<img alt="promptcard"  src="assets/images/cards/promptcard.svg" >
+									<img alt="thaipayment" src="assets/images/cards/thaipayment.svg" >
 								</div>
 							</div>
-					</div>	
-					<div class="row mx-1">
-						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-1">
-						<h4>Card Information</h4>
-						</div>
+					</div>
+          			<div class=" col-xl-6 col-lg-6 col-md-6 col-sm-12" >
 						
-							<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
+							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+								<h4>Card Information</h4>
             					<label for="cardnumber" >Card Number</label>
             					<input class="form-control" name="number" id="number" inputmode="numeric" value="" required  >
             					<div class="invalid-feedback">
@@ -164,15 +183,15 @@ function includeHTML() {
             					</div>
           					</div>
           					
-          					
-          					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mb-3 pr-1 pr-sm-3 pr-md-3 pr-lg-3">
+          				<div class="row mx-0"> 
+          							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mb-3">
             					<label for="expirationdate">Expiration Date</label>
             					<input class="form-control" name="expiry"id="expiry" type="text" inputmode="numeric" placeholder="MM/YY" value="" required >
            						 <div class="invalid-feedback">
               							Valid Expiration Date is required.
             					</div>
           					</div>
-          					<div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 col-6 mb-3 pl-1 pl-sm-3 pl-md-3 pl-lg-3">
+          					<div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 col-6 mb-3">
             					<label for="securitycode">CVV</label>
             					<div class="wrapper">
             							<input class="form-control" name="cvc" id="cvc"type="text" inputmode="numeric" placeholder="" value="" required>
@@ -181,37 +200,59 @@ function includeHTML() {
               							Valid CVV is required.
             					</div>
             					</div>
-            					<div include-html="cvv_sample.html"></div>   
-            					
-            					
-           						 
+            					<div include-html="cvv_sample.html"></div> 
           					</div>
-
-
+          				</div>	
           					
-          					
-          					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
+          					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
             					<label for="name">Cardholder Name</label>
             					<input name="name"id="name" type="text" class="form-control" placeholder="" value="" required>
            						 <div class="invalid-feedback">
               							Valid Card Number is required.
             					</div>
           					</div>
-
-
-
-
           			</div>
-          			<div class="row mx-xl-1 mx-lg-1 mx-md-1 mx-sm-1 mx-1 my-3 mb-3"><!-- IMPORTANT THE SUBMIT(NEXT) BUTTON WILL GO TO INDIVIDUAL METHOD PAYMENT PAGE (MOBILE LAYOUT ONLY) -->
+				</div>	
+					<!-- TAB 002 - CREDITCARD FORM  -->			
+          			<div class="row mx-1" id="mobilebanking-tab"  style="display:none;">
+          			002 <br><br>AREA FOR mobilebanking input form group
+          			</div>
+          			<!-- TAB 003 - CREDITCARD FORM  -->			
+          			<div class="row mx-1" id="internetbanking-tab" style="display:none;">
+          			003	<br><br>AREA FOR internetbanking input form group
+          			</div>
+          			<!-- TAB 004 - CREDITCARD FORM  -->			
+          			<div class="row mx-1" id="qrcode-tab" style="display:none;">
+          			004 <br><br>AREA FOR qrcode form group
+          			</div>
+          			<!-- TAB 002 - CREDITCARD FORM  -->			
+          			<div class="row mx-1" id="wallet-tab" style="display:none;">
+          			005 <br><br>AREA FOR wallet form group
+          			</div>
+          			
+
+         
+          			<div class="row mx-xl-1 mx-lg-1 mx-md-1 mx-sm-1 mx-1 my-3"><!-- IMPORTANT THE SUBMIT(NEXT) BUTTON WILL GO TO INDIVIDUAL METHOD PAYMENT PAGE (MOBILE LAYOUT ONLY) -->
       						<div class="col-6"><button class="button-large-secondary-normal float-left" type="submit">Back</button></div>
       						<div class="col-6"><button class="button-large-primary-yellow float-right" type="submit">Next</button></div>
       				</div>
-      			</form>	
+      				
 			</div>
+        			
+	
+			
+		
+				
+
 		</div>
       		
       			
+      			
+      		
+      			</form>
       			</div>
+
+	
 	</div>  
 
 	
@@ -221,17 +262,10 @@ function includeHTML() {
   
   
   </div>
-  
- 
-  
   <div class="container-xl container-lg container-md overflow-hidden d-block powered-by-krungsri w-100 fixed-bottom-in-mobile ">
   		Powered by <strong>KRUNGSRI EASY PAY</strong>
   </div>
 </main>
-
-
-
-
 
 
     <!-- Jquery -->
@@ -239,11 +273,9 @@ function includeHTML() {
 	<!-- Need for Form -->
      <script src="assets/dist/js/customized-selectoption.js" type="text/jscript"></script>
      <script src="assets/dist/js/form-validation.js"></script> 
- 	<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-
+     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
      
      <script type="text/javascript">
-     
      	$("#shippingaddressbox").hide();
 $("#same-address").click(function() {
     if($(this).is(":checked")) {
@@ -252,8 +284,10 @@ $("#same-address").click(function() {
         $("#shippingaddressbox").show();
     }
 });
-     </script>    
-      
+     
+     </script>
+     
+     
      <script>
 $(document).ready(function(){
   $(".show-hide-details").click(function(){
@@ -261,8 +295,36 @@ $(document).ready(function(){
   });
 });
 </script>
-	
 
+<script>
+	function on_change(el){
+        if(el.id == 'creditcards'){ 
+            document.getElementById('creditcards-tab').style.display = 'flex'; // Show el
+        }else{
+            document.getElementById('creditcards-tab').style.display = 'none'; // Hide el
+        }
+        if(el.id == 'mobilebanking'){ 
+            document.getElementById('mobilebanking-tab').style.display = 'flex'; // Show el
+        }else{
+            document.getElementById('mobilebanking-tab').style.display = 'none'; // Hide el
+        }
+        if(el.id == 'internetbanking'){ 
+            document.getElementById('internetbanking-tab').style.display = 'flex'; // Show el
+        }else{
+            document.getElementById('internetbanking-tab').style.display = 'none'; // Hide el
+        }
+         if(el.id == 'qrcode'){ 
+            document.getElementById('qrcode-tab').style.display = 'flex'; // Show el
+        }else{
+            document.getElementById('qrcode-tab').style.display = 'none'; // Hide el
+        }
+         if(el.id == 'wallet'){ 
+            document.getElementById('wallet-tab').style.display = 'flex'; // Show el
+        }else{
+            document.getElementById('wallet-tab').style.display = 'none'; // Hide el
+        }
+    }
+</script>
 <script>
 $(document).ready(function(){
   $("#Call-Cvv-Modal").click(function(){
@@ -312,8 +374,11 @@ $(document).ready(function(){
     debug: false // optional - default false
 });
     </script>
+    
     <script>
 		includeHTML();
 	</script>
-</body>
+
+	
+  </body>
 </html>

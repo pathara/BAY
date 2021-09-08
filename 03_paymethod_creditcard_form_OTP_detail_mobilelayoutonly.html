@@ -158,47 +158,34 @@ function includeHTML() {
 						
 							<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
             					<label for="cardnumber" >Card Number</label>
-            					<input class="form-control" name="number" id="number" inputmode="numeric" value="" required  >
-            					<div class="invalid-feedback">
-              							Valid Card Number is required.
-            					</div>
+            					<div class="inputcarddetails">1234 12xx xxxx 1234</div>
           					</div>
           					
           					
           					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mb-3 pr-1 pr-sm-3 pr-md-3 pr-lg-3">
             					<label for="expirationdate">Expiration Date</label>
-            					<input class="form-control" name="expiry"id="expiry" type="text" inputmode="numeric" placeholder="MM/YY" value="" required >
-           						 <div class="invalid-feedback">
-              							Valid Expiration Date is required.
-            					</div>
-          					</div>
-          					<div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 col-6 mb-3 pl-1 pl-sm-3 pl-md-3 pl-lg-3">
-            					<label for="securitycode">CVV</label>
-            					<div class="wrapper">
-            							<input class="form-control" name="cvc" id="cvc"type="text" inputmode="numeric" placeholder="" value="" required>
-            							<div class="cvv-button" role="button" id="Call-Cvv-Modal"></div>
-            							<div class="invalid-feedback">
-              							Valid CVV is required.
-            					</div>
-            					</div>
-            					<div include-html="cvv_sample.html"></div>   
-            					
-            					
-           						 
-          					</div>
-
-
-          					
-          					
+            					<div class="inputcarddetails">04/21</div>
+                  			</div>
+                  			
+          						
           					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
             					<label for="name">Cardholder Name</label>
-            					<input name="name"id="name" type="text" class="form-control" placeholder="" value="" required>
-           						 <div class="invalid-feedback">
-              							Valid Card Number is required.
-            					</div>
+            					<div class="inputcarddetails">PS Mahapriwanni</div>
           					</div>
-
-
+          					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3 border-bottom">
+            					<label for="mobile">Mobile Number</label>
+            					<div class="inputcarddetails">+66 00-123-4567</div>
+          					</div>
+						<hr>
+						<div class="col-xl-12 col-lg-12 col-md-12  col-sm-12 col-12 mb-3 px-3">
+            							<label for="Verification-Code">Verification Code</label>
+            								<input type="text" class="form-control" id="Verification-Code" placeholder="" value="">
+           						 			<div class="invalid-feedback">
+              										invalid Verification Code.
+            								</div>
+            						
+            						</div>
+            				
 
 
           			</div>
@@ -230,7 +217,7 @@ function includeHTML() {
 </main>
 
 
-
+<div include-html="cvv_sample.html"></div>   
 
 
 
