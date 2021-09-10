@@ -131,8 +131,8 @@ function includeHTML() {
 					<form class="needs-validation" action="" novalidate>
 					
 					<div class="row d-block mx-xl-0 mx-lg-n1 mx-md-n1 mx-sm-0">
-							<div class="col-12 ml-3"><h3>Payment Methods</h3></div>
-							<div class="card-wrapper pb-3"></div>
+							<div class="w-100 ml-3"><h3>Payment Methods</h3></div>
+							<div class="card-wrapper pb-3" style="border:thin fuchsia solid;"></div>
 							<div class="col-12 d-block text-center">
 								<div class="card-banner pt-1">							
 									<img alt="visa" src="assets/images/cards/visa.svg" >
@@ -296,7 +296,7 @@ $(document).ready(function(){
   });
 });
 </script>
-<script src="assets/dist/js/card.js"></script>
+<script src="assets/dist/js/jquery.card.js"></script>
 	    <script type="text/javascript">
         var card = new Card({
     // a selector or DOM element for the form where users will
@@ -313,7 +313,7 @@ $(document).ready(function(){
         nameInput: 'input#name' // optional - defaults input[name="name"]
     },
 
-    width: 350, // optional — default 350px
+    width:350, // optional — default 350px
     formatting: true, // optional - default true
 
     // Strings for translation - optional
