@@ -875,11 +875,15 @@ font-size: 12px!important;
 /**/
 
 .jp-card{
+	border:thin lime solid!important;
 	box-shadow: -3px 16px 11px -12px rgba(0,0,0,0.52);
 	-webkit-box-shadow: -3px 16px 11px -12px rgba(0,0,0,0.52);
 	-moz-box-shadow: -3px 16px 11px -12px rgba(0,0,0,0.52);
 }
-
+.jp-card,.card-wrapper{
+	min-width:350px!important;
+	
+}
 
 
 

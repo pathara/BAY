@@ -703,7 +703,6 @@
     left:0;
     overflow:hidden;
     border-radius:10px;
-    background:url('../../images/graphics/card_bg.svg') center center no-repeat;
     background:#787878;
 }
 .jp-card .jp-card-back:before,.jp-card .jp-card-front:before{
