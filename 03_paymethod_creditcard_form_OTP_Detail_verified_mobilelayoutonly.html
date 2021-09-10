@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=350, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="___">
     <meta name="author" content="__">
     <meta name="generator" content="___">
@@ -141,13 +141,13 @@ function includeHTML() {
 							<div class="col-12 ml-3"><h3>Payment Methods</h3></div>
 							<div class="card-wrapper pb-3"></div>
 							<div class="col-12 d-flex">
-								<div class="card-banner pt-1">							
-									<img alt="visa" src="assets/images/cards/visa.svg" >
-									<img alt="mastercard" height="22" src="assets/images/cards/mastercard.svg">
-									<img alt="jcb" src="assets/images/cards/jcb.svg" >
-									<img alt="cup"  src="assets/images/cards/cup.svg" >
-									<img alt="promptcard"  src="assets/images/cards/promptcard.svg">
-									<img alt="thaipayment" src="assets/images/cards/thaipayment.svg" >
+								<div class="card-banner  m-auto" >							
+									<img alt="visa" height="22" src="assets/images/cards/visa.svg" width="24">
+									<img alt="mastercard" height="22" src="assets/images/cards/mastercard.svg" width="24">
+									<img alt="jcb" height="22" src="assets/images/cards/jcb.svg" width="24">
+									<img alt="cup" height="22" src="assets/images/cards/cup.svg" width="24">
+									<img alt="promptcard" height="22" src="assets/images/cards/promptcard.svg" width="24">
+									<img alt="thaipayment" height="22" src="assets/images/cards/thaipayment.svg" width="24">
 								</div>
 							</div>
 					</div>	
@@ -158,47 +158,36 @@ function includeHTML() {
 						
 							<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
             					<label for="cardnumber" >Card Number</label>
-            					<input class="form-control" name="number" id="number" inputmode="numeric" value="" required  >
-            					<div class="invalid-feedback">
-              							Valid Card Number is required.
-            					</div>
+            					<div class="inputcarddetails">1234 12xx xxxx 1234</div>
           					</div>
           					
           					
           					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mb-3 pr-1 pr-sm-3 pr-md-3 pr-lg-3">
             					<label for="expirationdate">Expiration Date</label>
-            					<input class="form-control" name="expiry"id="expiry" type="text" inputmode="numeric" placeholder="MM/YY" value="" required >
-           						 <div class="invalid-feedback">
-              							Valid Expiration Date is required.
-            					</div>
-          					</div>
-          					<div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 col-6 mb-3 pl-1 pl-sm-3 pl-md-3 pl-lg-3">
-            					<label for="securitycode">CVV</label>
-            					<div class="wrapper">
-            							<input class="form-control" name="cvc" id="cvc"type="text" inputmode="numeric" placeholder="" value="" required>
-            							<div class="cvv-button" role="button" id="Call-Cvv-Modal"></div>
-            							<div class="invalid-feedback">
-              							Valid CVV is required.
-            					</div>
-            					</div>
-            					<div include-html="cvv_sample.html"></div>   
-            					
-            					
-           						 
-          					</div>
-
-
-          					
-          					
+            					<div class="inputcarddetails">04/21</div>
+                  			</div>
+                  			
+          						
           					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
             					<label for="name">Cardholder Name</label>
-            					<input name="name"id="name" type="text" class="form-control" placeholder="" value="" required>
-           						 <div class="invalid-feedback">
-              							Valid Card Number is required.
-            					</div>
+            					<div class="inputcarddetails">PS Mahapriwanni</div>
           					</div>
-
-
+          					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-0">
+            					<label for="mobile">Mobile Number</label>
+            					<div class="inputcarddetails">+66 00-123-4567</div>
+            					<hr>
+          					</div>
+						
+						<div class="col-xl-12 col-lg-12 col-md-12  col-sm-12 col-12 mb-3 px-3">
+									
+            							<label for="Verification-Code">Verification Code</label>
+            								<input type="text" class="form-control" id="Verification-Code" placeholder="" value="">
+           						 			<div class="invalid-feedback">
+              										invalid Verification Code.
+            								</div>
+            						
+            						</div>
+            				
 
 
           			</div>
@@ -230,7 +219,7 @@ function includeHTML() {
 </main>
 
 
-
+<div include-html="cvv_sample.html"></div>   
 
 
 

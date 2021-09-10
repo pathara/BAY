@@ -41,7 +41,7 @@
 					
 					
 			<!-- START ORDER DETAIL - FIRST SWAP -->
-			<div class="second-order-details" style="display:block;">
+			<div id="first-order-details" style="display:block;">
 					<div class="row mx-xl-1 mx-lg-n11 mx-md-1 mx-0">
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 subhead" >Order Number</div>
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ordernumber">#123456789</div>
@@ -57,7 +57,7 @@
         					 </div>
         			</div>
         			<div class="row mx-1"><!-- mr-xl-2  -->
-        			<div class="col-6"><a class="more-details" >More Details</a> </div>
+        			<div class="col-6 "><a href="#">More Details </a> </div>
         					<!--  <div class="col-6 totalamountmobile">THB 10,000.00</div>--> <!-- TOTAL AMOUNT HERE -->      					<br><br>
         					<div class="borderline">&nbsp;</div>        				
         				</div>
@@ -66,7 +66,7 @@
         					<div class="col-12 total text-right">Total Amount</div>
         					<div class="col-12 totalamount text-right">THB 10,000</div><!-- TOTAL AMOUNT HERE -->
         					<div class="col-12">
-        						<div class="hide-button  show-hide-details">&nbsp;</div>
+        						<div class="hide-button" onclick="javascript:SwapDivsWithClick('second-order-details','first-order-details')">&nbsp;</div>
         							
         					</div>
         			</div>
@@ -76,10 +76,10 @@
         	<!-- END ORDER DETAIL - FIRST SWAP -->
 			
 			<!-- START ORDER DETAIL SECOND SWAP -->
-			<div class="second-order-details" style="display:none;">
+			<div id="second-order-details" style="display:none;">
         			<div class="row mx-0 text-right pb-4"><!-- mr-xl-2  -->
-        					<div class="col-5 text-left" role="button" ><a class="more-details show-hide-details" >More Details</a> </div>
-             				<div class="col-7 totalamount text-right">THB 10,000</div><!-- TOTAL AMOUNT HERE -->
+        					<div class="col-5 text-left" role="button" ><a href="javascript:SwapDivsWithClick('first-order-details','second-order-details')">More Details</a> </div>
+        					<div class="col-7 totalamount text-right">THB 10,000</div><!-- TOTAL AMOUNT HERE -->
         					
         			</div>
         			        				
@@ -100,7 +100,7 @@
 	
 	<div class="col-xl-9 col-lg-9 col-md-7 col-sm-12"style="/*border:1px red solid;"><!-- FORM BILLING ADDRESS CARD -->
 		 <form class="needs-validation" novalidate>	
-    			<div class="row d-block mx-xl-0 mx-lg-n1 mx-md-n1 mx-sm-0 ">
+    			<div class="row d-block mx-xl-0 mx-lg-n1 mx-md-n1 mx-sm-n1 ">
 			<div class="billingaddressbox"><!-- w-100 bg-white -->
 				<div class="col-12 ml-1"><h3>Billing Address</h3></div>
 					<div class="row mx-1">
@@ -337,20 +337,9 @@
           					</div>
 					</div>
 			</div>
-	<div class="row mx-xl-2 mx-lg-2 mx-md-2 mx-sm-2 mx-2"><!-- IMPORTANT THE SUBMIT(NEXT) BUTTON WILL GO TO INDIVIDUAL METHOD PAYMENT PAGE -->
-      			
-      			<div class="col-6">
-      				<button class="button-large-secondary-normal float-left" type="submit">Back</button>
-      			</div>
-      			
-      			<div class="col-6 small-device-display">
-      				<button class="button-large-primary-yellow float-right" type="submit" onClick="window.location.href='02_card_select_mobilelayoutonly.html';">NextS</button>
-      			</div>
-      			
-      			<div class="col-6 large-device-display">
-      				<button class="button-large-primary-yellow float-right" type="submit" onClick="window.location.href='03_paymethod_creditcard_form_All_Input_Desktop_layout_only.html';">NextL</button>
-      			</div>
-
+	<div class="row mx-xl-2 mx-lg-2 mx-md-2 mx-sm-2 mx-2">
+      			<div class="col-6"><button class="button-large-secondary-normal float-left" type="submit">Back</button></div>
+      			<div class="col-6"><button class="button-large-primary-yellow float-right" type="submit">Next</button></div>
       		</div>
 	<br>
 			</div>
@@ -400,13 +389,37 @@ $("#same-address").click(function() {
      
      </script>
      
-     <script>
-$(document).ready(function(){
-  $(".show-hide-details").click(function(){
-    $(".second-order-details").toggle(500);
-  });
+          <script type="text/javascript">
+     	$("#shippingaddressbox").hide();
+$("#same-address").click(function() {
+    if($(this).is(":checked")) {
+        $("#shippingaddressbox").hide();
+    } else {
+        $("#shippingaddressbox").show();
+    }
 });
+     
+     </script>
+     
+     <script type="text/javascript">
+function SwapDivsWithClick(div1,div2)
+{
+   d1 = document.getElementById(div1);
+   d2 = document.getElementById(div2);
+   if( d2.style.display == "none" )
+   {
+      d1.style.display = "none";
+      d2.style.display = "block";
+   }
+   else
+   {
+      d1.style.display = "block";
+      d2.style.display = "none";
+   }
+}
 </script>
+
+
 	
   </body>
 </html>

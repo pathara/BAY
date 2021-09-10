@@ -1,3 +1,4 @@
+﻿
 <!doctype html>
 <html lang="en" class="h-100">
   <head>
@@ -100,7 +101,7 @@
 	
 	<div class="col-xl-9 col-lg-9 col-md-7 col-sm-12"style="/*border:1px red solid;"><!-- FORM BILLING ADDRESS CARD -->
 		 <form class="needs-validation" novalidate>	
-    			<div class="row d-block mx-xl-0 mx-lg-n1 mx-md-n1 mx-sm-n1 ">
+    			<div class="row d-block mx-xl-0 mx-lg-n1 mx-md-n1 mx-sm-0 ">
 			<div class="billingaddressbox"><!-- w-100 bg-white -->
 				<div class="col-12 ml-1"><h3>Billing Address</h3></div>
 					<div class="row mx-1">
@@ -337,9 +338,20 @@
           					</div>
 					</div>
 			</div>
-	<div class="row mx-xl-2 mx-lg-2 mx-md-2 mx-sm-2 mx-2">
-      			<div class="col-6"><button class="button-large-secondary-normal float-left" type="submit">Back</button></div>
-      			<div class="col-6"><button class="button-large-primary-yellow float-right" type="submit">Next</button></div>
+	<div class="row mx-xl-2 mx-lg-2 mx-md-2 mx-sm-2 mx-2"><!-- IMPORTANT THE SUBMIT(NEXT) BUTTON WILL GO TO INDIVIDUAL METHOD PAYMENT PAGE -->
+      			
+      			<div class="col-6">
+      				<button class="button-large-secondary-normal float-left" type="submit">Back</button>
+      			</div>
+      			
+      			<div class="col-6 small-device-display">
+      				<button class="button-large-primary-yellow float-right" type="submit" onClick="window.location.href='02_card_select_mobilelayoutonly.html';">NextS</button>
+      			</div>
+      			
+      			<div class="col-6 large-device-display">
+      				<button class="button-large-primary-yellow float-right" type="submit" onClick="window.location.href='03_paymethod_creditcard_form_All_Input_Desktop_layout_only.html';">NextL</button>
+      			</div>
+
       		</div>
 	<br>
 			</div>
@@ -378,18 +390,6 @@
      <script src="assets/dist/js/form-validation.js"></script> 
      
      <script type="text/javascript">
-     	$("#shippingaddressbox").hide();
-$("#same-address").click(function() {
-    if($(this).is(":checked")) {
-        $("#shippingaddressbox").hide();
-    } else {
-        $("#shippingaddressbox").show();
-    }
-});
-     
-     </script>
-     
-          <script type="text/javascript">
      	$("#shippingaddressbox").hide();
 $("#same-address").click(function() {
     if($(this).is(":checked")) {

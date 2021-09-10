@@ -7,20 +7,11 @@
     <meta name="author" content="__">
     <meta name="generator" content="___">
     <title>INDEX</title>
-    
-    <!-- Bootstrap core CSS -->
+        <!-- Bootstrap core CSS -->
 	<link href="assets/dist/css/bootstrap.css" rel="stylesheet">
-
     <!-- Custom styles -->
-   
     <link rel="stylesheet" href="assets/dist/css/style.css" type="text/css" charset="utf-8">    
-    
-	
-         
-       
-  </head>
-  
-  <script>
+    <script type="text/javascript">
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
@@ -48,7 +39,9 @@ function includeHTML() {
     }
   }
 };
-</script>
+</script>      
+  </head>
+ 
 
 
 <body class="d-flex flex-column h-100">
@@ -140,7 +133,7 @@ function includeHTML() {
 					<div class="row d-block mx-xl-0 mx-lg-n1 mx-md-n1 mx-sm-0">
 							<div class="col-12 ml-3"><h3>Payment Methods</h3></div>
 							<div class="card-wrapper pb-3"></div>
-							<div class="col-12 d-flex">
+							<div class="col-12 d-block text-center">
 								<div class="card-banner pt-1">							
 									<img alt="visa" src="assets/images/cards/visa.svg" >
 									<img alt="mastercard" height="22" src="assets/images/cards/mastercard.svg">
@@ -151,7 +144,7 @@ function includeHTML() {
 								</div>
 							</div>
 					</div>	
-					<div class="row mx-1">
+					<div class="row mx-1 mt-3">
 						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-1">
 						<h4>Card Information</h4>
 						</div>
@@ -181,7 +174,6 @@ function includeHTML() {
               							Valid CVV is required.
             					</div>
             					</div>
-            					<div include-html="cvv_sample.html"></div>   
             					
             					
            						 
@@ -198,10 +190,44 @@ function includeHTML() {
             					</div>
           					</div>
 
+							 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-4 col-4 mb-3 pr-1 pr-sm-3 pr-md-3 pr-lg-3">
+            							<label for="country">Area Code</label>
+            								<select class="d-block w-100 select-shadow" id="country" required>
+              										<option value="">+66</option>
+              										<option>+66</option>
+             										<option>+69</option>
+              										<option>+112</option>
+            								</select>
+            					<div class="invalid-feedback">
+            							  Please select a valid area code
+            					</div>
+
+            						
+            						</div>
+            						<div class="col-xl-6 col-lg-6 col-md-6  col-sm-8 col-8 mb-3 pl-1 pl-sm-3 pl-md-3 pl-lg-3">
+            							<label for="mobile">Mobile Number</label>
+            								<input type="text" class="form-control" id="mobile" placeholder="Please fill Mobile Number" value="">
+           						 			<div class="invalid-feedback">
+              										Please fill a valid Mobile Number.
+            								</div>
+            						
+            						</div>
+
+          					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-2 mb-3">
+            				
+			<div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="remember-card" checked="" name="" style="width: 28px; height: 28px">
+          <label class="custom-control-label remembercard" for="remember-card">Remember This Card</label>
+        	</div>
+			</div>
+
+          					</div>
+ 						
+            						
+            				
 
 
-
-          			</div>
+          			
           			<div class="row mx-xl-1 mx-lg-1 mx-md-1 mx-sm-1 mx-1 my-3 mb-3"><!-- IMPORTANT THE SUBMIT(NEXT) BUTTON WILL GO TO INDIVIDUAL METHOD PAYMENT PAGE (MOBILE LAYOUT ONLY) -->
       						<div class="col-6"><button class="button-large-secondary-normal float-left" type="submit">Back</button></div>
       						<div class="col-6"><button class="button-large-primary-yellow float-right" type="submit">Next</button></div>
@@ -230,7 +256,7 @@ function includeHTML() {
 </main>
 
 
-
+<div include-html="cvv_sample.html"></div>   
 
 
 
@@ -254,23 +280,23 @@ $("#same-address").click(function() {
 });
      </script>    
       
-     <script>
+     <script type="text/javascript">
 $(document).ready(function(){
   $(".show-hide-details").click(function(){
     $(".second-order-details").toggle(500);
   });
 });
 </script>
-	
 
-<script>
+
+<script type="text/javascript">
 $(document).ready(function(){
   $("#Call-Cvv-Modal").click(function(){
     $("#Cvv-Modal").modal();
   });
 });
 </script>
-<script src="assets/dist/js/card.js"type="text/javascript"></script>
+<script src="assets/dist/js/card.js"></script>
 	    <script type="text/javascript">
         var card = new Card({
     // a selector or DOM element for the form where users will
@@ -312,7 +338,7 @@ $(document).ready(function(){
     debug: false // optional - default false
 });
     </script>
-    <script>
+    <script type="text/javascript">
 		includeHTML();
 	</script>
 </body>
