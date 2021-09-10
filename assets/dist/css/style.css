@@ -772,82 +772,6 @@ input[name=paymentmethods]:checked + label.yellow-desktop {
 	margin:20px auto 0px auto;
 }
 
-/* fix gutter */
-@media screen and (min-device-width: 1280px) and (max-device-width: 1365px) { 
-    .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px; /*1140*/
-  }
-}
-
-@media (max-width: 575px) {   /* 575- Mobile */
-	
-	body{
-	background-color:#FFFFFF;
-	}
-
-  .bottomshadow {
-  	display:none!important;
-  	}
-      
-  .totalamountmobile{
-	display:block;
-	font-size:16px;
-	font-family: 'krungsri_condensed', sans-serif!important;
-	text-align:right;
-	font-weight:bold;
-	}
-      .fixed-bottom-in-mobile {
-  		position: fixed;
- 	 	right: 0;
-  		bottom: 0;
-  		left: 0;
-  		z-index: 1030;
-	}
-	.cardselectbox{
-		box-shadow: 0px 0px 0px 0 rgba(0,0,0,0);
-}
-	.card-banner{
-	display:flex;
-	height:22px;
-	margin: 0px auto;
-	
-	}
-.card-banner img{
-	height:22px;
-	width:24px;
-	
-	}
-
-
-}
-
-
-@media (min-width: 576px) {   
-  	.bottomshadow { display:none!important;}
-
-}
-
-@media (min-width: 768px) {   
- 	 .bottomshadow { display:block!important;}
-		
-}
-
-@media (min-width: 992px) {   
- 	.bottomshadow { display:block!important;}
- 	
-
-}
-
-@media (min-width: 1366px) {
- 	.bottomshadow { display:block!important;}
-
-
-}
-
-
-
-
-
 .cvv-button{
 	height:16px;
 	width:16px;
@@ -863,12 +787,98 @@ input[name=paymentmethods]:checked + label.yellow-desktop {
 font-size: 12px!important;
 	color: #222222!important;
   font-family: Thongterm!important;
- 
-  letter-spacing: 0!important;
-  line-height: 30px!important;
+   letter-spacing: 0!important;
+  line-height: 24px!important;
   text-align: center!important;
 }
 
+
+/* fix gutter */
+@media screen and (min-device-width: 1280px) and (max-device-width: 1365px) { 
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px; /*1140*/
+  }
+}
+
+@media (max-width: 575px) {   /* 575- Mobile */
+	
+	body{
+	background-color:#FFFFFF;
+	}
+  .totalamountmobile{
+	display:block;
+	font-size:16px;
+	font-family: 'krungsri_condensed', sans-serif!important;
+	text-align:right;
+	font-weight:bold;
+	}
+   .fixed-bottom-in-mobile {
+  		position: fixed;
+ 	 	right: 0;
+  		bottom: 0;
+  		left: 0;
+  		z-index: 1030;
+	}
+	.cardselectbox{
+		box-shadow: 0px 0px 0px 0 rgba(0,0,0,0);
+}
+	.card-banner{
+	display:block;
+	height:24px;
+	margin: 0px auto;
+	 text-align:center;
+	}
+	.card-banner img{
+	height:24px;
+	width:auto;
+	margin:5px 2px 10px 2px;
+	
+	}
+}
+
+}
+
+
+@media (min-width: 576px) {   
+  	
+
+}
+
+@media (min-width: 768px) {   
+ 	 
+		
+}
+
+@media (min-width: 992px) {   
+ 	
+}
+
+@media (min-width: 1366px) {
+ 	
+}
+
+
+/*STYLE TO SHOW SUBMIT BUTTON WITH DIFFERENT DESTINATION LINK */
+@media screen and (max-width: 767px) {
+  	.small-device-display{display:block!important;}
+	.large-device-display{display:none!important;}
+	.bottomshadow {display:none!important;	}
+
+}
+
+@media screen and (min-width: 768px) {
+  	.small-device-display{display:none!important;}
+	.large-device-display{display:block!important;}
+	.bottomshadow { display:block!important;}
+
+}
+/**/
+
+.jp-card{
+	box-shadow: -3px 16px 11px -12px rgba(0,0,0,0.52);
+	-webkit-box-shadow: -3px 16px 11px -12px rgba(0,0,0,0.52);
+	-moz-box-shadow: -3px 16px 11px -12px rgba(0,0,0,0.52);
+}
 
 
 
