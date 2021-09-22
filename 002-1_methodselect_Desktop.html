@@ -336,8 +336,7 @@
 												<div class="wrapper">
 													<input class="form-control" id="cvc" name="cvc" placeholder="" required="" type="text" value="">
 
-													<div class="cvv-button" id="Call-Cvv-Modal" role="button">
-													</div>
+													<div class="cvv-button" role="button" id="Call-Cvv-Modal"></div>
 
 
 													<div class="invalid-feedback">
@@ -516,7 +515,7 @@
 			Powered by <strong>KRUNGSRI EASY PAY</strong>
 		</div>
 	</main>
-	
+	<div include-html="cvv_sample.html"></div>
 	<!-- Jquery -->
 	<script src="assets/dist/js/jquery-3.6.0.min.js" type="text/jscript">
 	</script> 
@@ -548,6 +547,16 @@
 	 });
 	});
 	</script> 
+	
+		<script type="text/javascript">
+$(document).ready(function(){
+  $("#Call-Cvv-Modal").click(function(){
+    $("#Cvv-Modal").modal();
+  });
+});
+</script>
+
+
 	<script>
 	   function on_change(el){
 	       if(el.id == 'creditcards'){ 
@@ -578,13 +587,7 @@
 	   }
 	</script>
 	 
-	<script>
-	$(document).ready(function(){
-	 $("#Call-Cvv-Modal").click(function(){
-	   $("#Cvv-Modal").modal();
-	 });
-	});
-	</script> 
+
 	
 	<script src="assets/dist/js/jquery.card.js" type="text/javascript">
 	</script> 	
@@ -630,9 +633,9 @@
 	});
 	</script> 
 	
-	<script>
-	       includeHTML();
-	</script>
+		    <script type="text/javascript">
+		includeHTML();
+			</script>
 	
 </body>
 </html>
