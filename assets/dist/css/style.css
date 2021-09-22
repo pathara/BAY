@@ -85,13 +85,23 @@ body{
 	border-top:4px #FFD400 solid;
 	
 }
+.borderyellow2{
+	border-top:2px #FFD400 solid;
+	margin-top:1rem;
+
+}
+
 .borderline{
 	border-top:1px #E5E3DF solid;
 	border-radius: 3px;
   	width: 100%;
   	margin-left:15px!important;
 	margin-right:15px!important;
+	margin-top:15px!important;
 	
+}
+.bg-yellow{
+	background-color:#FFD400;
 }
 /* TYPOGRAPHY */
 h1,h2,h3,h4,h5,h6 {
@@ -106,16 +116,25 @@ h4{ font-size:16px!important; line-height:27px; padding-top:16px;	}
 /*h5{ font-size:28pt;	}
 h6{ font-size:28pt;	}*/
 
-a, .more-details{	  color: #FB934D;
+a, .more-details, .edit, .cancel{	  color: #FB934D;
   font-family: Thongterm;
   font-size: 14px;
   letter-spacing: 0;
   border-bottom:1px #FB934D solid;
   text-decoration:none;
   background-color:#FFFFFF;  
+  /*line-height:18px!important;*/
+  cursor:pointer;
 	
 }
-a:hover, .more-details:hover{
+.cancel{
+		z-index:2;
+		position:absolute;
+		top:50px;
+		background-color:transparent;
+}
+
+a:hover, .more-details:hover, .edit:hover{
 	color: #FB934D;
 	font-weight:bold;
 	text-decoration:none;
@@ -132,7 +151,7 @@ a:hover, .more-details:hover{
 	font-weight:bold;
 	text-align:right!important;
 }
-.ordersumwidht, .billingaddressbox, .cardselectbox{
+.ordersumwidht, .billingaddressbox, .cardselectbox, .summarybox{
 	width:100%!important;
 	background-color: #fff !important;
 	box-shadow: 1px 2px 8px 0 rgba(35,19,18,0.2);
@@ -150,23 +169,55 @@ a:hover, .more-details:hover{
   letter-spacing: 0;
   line-height: 34px;
   }
-.inputcarddetails{
+.inputcarddetails, .inputbillingdetails, .inputshippingdetails{
   color: #222222!important;
   font-family: 'thongterm', sans-serif!important;
   font-size: 16px!important;
   font-weight:bold!important;
   letter-spacing: 0!important;
-  line-height: 34px!important;
-  
+  line-height: 28px!important;}
 
+label.labelcarddetails{
+  color: #222222!important;
+  font-family: 'thongterm', sans-serif!important;
+  font-size: 16px!important;
+  font-weight:normal!important;
+  letter-spacing: 0!important;
+  line-height: 28px!important;  
 }  
-.productdetails{
+.inputbillingdetails > option:first-child, .inputshippingdetails > option:first-child{
+  color: #222222!important;
+  font-family: 'thongterm', sans-serif!important;
+  font-size: 16px!important;
+  font-weight:bold!important;
+  letter-spacing: 0!important;
+  line-height: 28px!important;}
+
+.inputbillingdetails, .inputshippingdetails{
+		text-align:justify;
+	/*width:80%!important;*/
+}
+textarea.inputbillingdetails, textarea.inputshippingdetails{
+	 resize: none;
+} 
+.productdetails, .amount-fee-details{
 	color: #949494;
   font-family: Thongterm;
   font-size: 14px;
   letter-spacing: 0;
   line-height: 24px;
+  
 
+}
+.amount-fee-value{
+	  color: #222222!important;
+  font-family: 'thongterm', sans-serif!important;
+  font-size: 16px!important;
+  font-weight:bold!important;
+  letter-spacing: 0!important;
+  line-height: 28px!important;  
+
+	
 }
 .totalamount{
 	font-family: 'krungsri_condensed', sans-serif!important;
@@ -488,7 +539,7 @@ select > option{
 }
 .button-short-primary-yellow{
 		height: 30px;
-    	max-width: 170px;
+    	max-width: 112px;
     	width:inherit;
     	box-sizing: border-box;
     	font-family:krungsri_conde
@@ -511,7 +562,7 @@ select > option{
     line-height: 27px;
     text-align: center;    
     height: 30px;
-    	max-width: 170px;
+    	
     	width:inherit;
     	box-sizing: border-box;
 }
@@ -675,7 +726,7 @@ select > option{
 .method1, method2{
 	
 }
-label.yellow{
+label.yellow, label.yellow2 {
 	font-family: 'krungsri_condensed', sans-serif!important;
 	font-weight:bold;
 	font-size:16px;
@@ -726,8 +777,8 @@ label.yellow-desktop{
 }
 
 
-input[name=paymentmethods]:checked {
-	
+label.yellow-desktop{
+	cursor:pointer;
     }
 
 input[name=paymentmethods]:checked + label.yellow {
@@ -746,6 +797,58 @@ input[name=paymentmethods]:checked + label.yellow-desktop {
    box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
   	-webkit-box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
   	-moz-box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
+  	cursor:pointer;
+}
+input[name=mobilebankingoptions]:checked + label.yellow {
+		background-image:url('../../images/icons/radio_checked.png');
+	background-position:10 center;
+	background-repeat:no-repeat;	
+
+   border:2px #FFD400 solid;
+   border-bottom:0px!important;
+   box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
+  	-webkit-box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
+  	-moz-box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
+}
+input[name=mobilebankingoptions]:checked + label.yellow2 {
+		background-image:url('../../images/icons/radio_checked.png');
+	background-position:10 center;
+	background-repeat:no-repeat;	
+
+   border:2px #FFD400 solid;
+   /*border-bottom:0px!important;*/
+   box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
+  	-webkit-box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
+  	-moz-box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
+}
+
+div.hiddenmobilebanking{
+	display:none;
+  	opacity: 0;
+  	transition: visibility 0s, opacity 1s linear;  	
+}
+input[name=mobilebankingoptions]:checked + label.yellow + div.hiddenmobilebanking {
+	/*	background-image:url('../../images/icons/radio_checked.png');
+	background-position:10 center;
+	background-repeat:no-repeat;	*/
+	display:flex;
+	opacity: 1;	
+	 
+   border:2px #FFD400 solid;
+   border-top:0px!important;
+   box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
+  	-webkit-box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
+  	-moz-box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
+}
+
+
+input[name=mobilebankingoptions]:checked + label.yellow-desktop {
+	background-color:#FFFFFF;
+   border:2px #FFD400 solid;
+   box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
+  	-webkit-box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
+  	-moz-box-shadow: 0px 0px 0px 0 rgba(35,19,18,0.2)!important;
+  	cursor:pointer;
 }
 
 
@@ -819,13 +922,13 @@ font-size: 12px!important;
   		left: 0;
   		z-index: 1030;
 	}
-	.cardselectbox{
+	.cardselectbox,.summarybox{
 		box-shadow: 0px 0px 0px 0 rgba(0,0,0,0);
 }
 	.card-banner{
 	display:block;
 	height:24px;
-	margin: 0px auto;
+	margin:0px 0px 20px 0px;
 	 text-align:center;
 	}
 	.card-banner img{
@@ -834,27 +937,35 @@ font-size: 12px!important;
 	margin:5px 2px 10px 2px;
 	
 	}
-}
+	.cancel{
+	display:none;
+	}
 
 }
 
 
 @media (min-width: 576px) {   
-  	
+  		.cancel{
+	display:none;
+	}
+
 
 }
 
 @media (min-width: 768px) {   
- 	 
+ 	 .hideindesktop{	display:none!important;}
+ 	 .cancel{display:block;;
+	}
+
 		
 }
 
 @media (min-width: 992px) {   
- 	
+ 	.hideindesktop{	display:none!important;}
 }
 
 @media (min-width: 1366px) {
- 	
+ 	.hideindesktop{	display:none!important;}
 }
 
 
@@ -870,12 +981,27 @@ font-size: 12px!important;
   	.small-device-display{display:none!important;}
 	.large-device-display{display:block!important;}
 	.bottomshadow { display:block!important;}
+	
+		.card-banner{
+	display:block;
+	height:36px;
+	margin:0px 0px 20px 0px;
+	 text-align:center;
+	}
+	.card-banner img{
+	height:36px;
+	width:auto;
+	margin:5px 3px 5px 3px;
+	
+	}
+	
+
 
 }
 /**/
 
 .jp-card{
-	border:thin lime solid!important;
+	
 	box-shadow: -3px 16px 11px -12px rgba(0,0,0,0.52);
 	-webkit-box-shadow: -3px 16px 11px -12px rgba(0,0,0,0.52);
 	-moz-box-shadow: -3px 16px 11px -12px rgba(0,0,0,0.52);
@@ -883,25 +1009,77 @@ font-size: 12px!important;
 .jp-card,.card-wrapper{
 	min-width:350px!important;
 	
+	
 }
 
 
 
+.container-only-mobile{
+	max-width: 575px!important;
+	padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.edit{
+	z-index:1;
+	position:absolute;
+	top:0.2rem;
+	right:1rem;
+	cursor:pointer;
+}
+
+
+.centered {
+   position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);}
+
+
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #d8d8d8 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #d8d8d8;
+    border-radius: 5px;
+    border: 0px none #d8d8d8;
+  }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+div.alert-mb {
+ color: #949494;
+  font-family: Thongterm;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-indent:24px;
+  background-image:url('../../images/icons/alert.png');
+  background-position:0px 6px;
+ 	background-repeat:no-repeat; 
+	
+}
 
 
 
