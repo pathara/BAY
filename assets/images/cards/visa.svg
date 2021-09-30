@@ -1,19 +1,60 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="36px" viewBox="0 0 40 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>427C90D2-4788-4D6C-B282-BF1F477A928E@1x</title>
-    <g id="Branding" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(-340.000000, -1923.000000)" id="Group-3">
-            <g transform="translate(340.000000, 1923.000000)">
-                <rect id="Rectangle-Copy-5" x="0" y="0" width="40" height="36"></rect>
-                <g id="Logo/Card/ITMX/40px-Copy-5" fill-rule="nonzero">
-                    <g id="Logo-size40,24px-square-01" transform="translate(2.000000, 7.000000)">
-                        <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="36" height="22.869"></rect>
-                        <rect id="Rectangle" fill="#F7B600" x="0.603" y="19.152" width="34.803" height="3.123"></rect>
-                        <rect id="Rectangle" fill="#1A1F71" x="0.603" y="0.594" width="34.803" height="3.123"></rect>
-                        <path d="M14.526,7.15497017 L10.926,15.732 L8.586,15.732 L6.786,8.883 C6.77042149,8.56235917 6.58523451,8.27429054 6.3,8.127 C5.60355016,7.79549055 4.86906554,7.55066235 4.113,7.398 L4.167,7.15497017 L7.929,7.15497017 C8.44987633,7.15105899 8.89104581,7.53804976 8.955,8.055 L9.855,13.014 L12.159,7.182 L14.526,7.15497017 Z M23.715,12.933 C23.715,10.665 20.592,10.539 20.61,9.531 C20.61,9.225 20.907,8.892 21.555,8.811 C22.305623,8.73885916 23.0617143,8.87265309 23.742,9.198 L24.129,7.398 C23.4633536,7.15169751 22.7597435,7.02376839 22.05,7.02 C19.863,7.02 18.315,8.19 18.306,9.855 C18.306,11.097 19.404,11.781 20.241,12.195 C21.078,12.609 21.402,12.879 21.393,13.257 C21.393,13.833 20.709,14.085 20.07,14.094 C19.2770922,14.1137566 18.4925955,13.9277099 17.793,13.554 L17.388,15.435 C18.1755632,15.7355694 19.0110354,15.891077 19.854,15.894 C22.185,15.894 23.715,14.742 23.715,12.96 M29.511,15.759 L31.563,15.759 L29.763,7.182 L27.9,7.182 C27.5018665,7.19570668 27.1491526,7.44260637 27,7.812 L23.679,15.759 L26.001,15.759 L26.469,14.472 L29.313,14.472 L29.511,15.759 Z M27,12.69 L28.161,9.468 L28.836,12.69 L27,12.69 Z M17.703,7.155 L15.903,15.732 L13.644,15.732 L15.444,7.155 L17.703,7.155 Z" id="Shape" fill="#1A1F71"></path>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 38.7 26.9" style="enable-background:new 0 0 38.7 26.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#polygon3052_1_);}
+	.st1{fill:url(#path3054_1_);}
+	.st2{fill:url(#path3056_1_);}
+	.st3{fill:url(#path3058_1_);}
+	.st4{fill:url(#path3060_1_);}
+	.st5{fill:url(#path3041_1_);}
+</style>
+<g id="g3900">
+	<g id="g3891">
+		
+			<linearGradient id="polygon3052_1_" gradientUnits="userSpaceOnUse" x1="149.8727" y1="-279.4614" x2="185.4884" y2="-279.1311" gradientTransform="matrix(0.8051 0 0 -0.8051 -117.5203 -210.9966)">
+			<stop  offset="0" style="stop-color:#191E5F"/>
+			<stop  offset="1" style="stop-color:#142787;stop-opacity:0.8185"/>
+		</linearGradient>
+		<polygon id="polygon3052" class="st0" points="16,8.5 18.9,8.5 17.1,19.2 14.2,19.2 		"/>
+		
+			<linearGradient id="path3054_1_" gradientUnits="userSpaceOnUse" x1="67.4996" y1="-215.7858" x2="103.1153" y2="-215.4555" gradientTransform="matrix(1 0 0 -1 -64.5 -201.6522)">
+			<stop  offset="0" style="stop-color:#191E5F"/>
+			<stop  offset="1" style="stop-color:#142787;stop-opacity:0.8185"/>
+		</linearGradient>
+		<path id="path3054" class="st1" d="M27.6,8.9c-0.6-0.2-1.5-0.4-2.6-0.4c-2.9,0-4.9,1.4-4.9,3.5c0,1.5,1.4,2.4,2.5,2.9
+			c1.1,0.5,1.5,0.9,1.5,1.3c0,0.7-0.9,1-1.7,1c-1.2,0-1.8-0.2-2.7-0.6l-0.4-0.2l-0.4,2.4c0.7,0.3,1.9,0.6,3.2,0.6
+			c3.1,0,5-1.4,5.1-3.6c0-1.2-0.8-2.1-2.4-2.9c-1-0.5-1.6-0.8-1.6-1.3c0-0.4,0.5-0.9,1.7-0.9c1,0,1.6,0.2,2.2,0.4l0.3,0.1L27.6,8.9"
+			/>
+		
+			<linearGradient id="path3056_1_" gradientUnits="userSpaceOnUse" x1="67.5006" y1="-215.9133" x2="103.1166" y2="-215.583" gradientTransform="matrix(1 0 0 -1 -64.5 -201.6522)">
+			<stop  offset="0" style="stop-color:#191E5F"/>
+			<stop  offset="1" style="stop-color:#142787;stop-opacity:0.8185"/>
+		</linearGradient>
+		<path id="path3056" class="st2" d="M35.1,8.6h-2.2c-0.7,0-1.2,0.2-1.5,0.9L27,19.3h3.1c0,0,0.5-1.3,0.6-1.6c0.3,0,3.3,0,3.7,0
+			c0.1,0.4,0.4,1.6,0.4,1.6h2.7L35.1,8.6 M31.5,15.5c0.2-0.6,1.2-3,1.2-3c0,0,0.2-0.6,0.4-1l0.2,0.9c0,0,0.6,2.5,0.7,3.1L31.5,15.5
+			L31.5,15.5L31.5,15.5z"/>
+		<g id="g3079" transform="matrix(0.8050999,0,0,0.8050999,8.0912245,9.2560348)">
+			
+				<linearGradient id="path3058_1_" gradientUnits="userSpaceOnUse" x1="175.7946" y1="-356.7732" x2="211.4105" y2="-356.4429" gradientTransform="matrix(0.8051 0 0 -0.8051 -147.662 -281.3128)">
+				<stop  offset="0" style="stop-color:#191E5F"/>
+				<stop  offset="1" style="stop-color:#142787;stop-opacity:0.8185"/>
+			</linearGradient>
+			<path id="path3058" class="st3" d="M4.5-0.8L1,8.3L0.6,6.4C0,4.3-2.1,2-4.4,0.9l3.2,11.6l3.8,0L8.4-0.8H4.5"/>
+			
+				<linearGradient id="path3060_1_" gradientUnits="userSpaceOnUse" x1="175.759" y1="-352.9401" x2="211.3748" y2="-352.6097" gradientTransform="matrix(0.8051 0 0 -0.8051 -147.662 -281.3128)">
+				<stop  offset="0" style="stop-color:#191E5F"/>
+				<stop  offset="1" style="stop-color:#142787;stop-opacity:0.8185"/>
+			</linearGradient>
+			<path id="path3060" class="st4" d="M-2.3-0.8h-5.8l0,0.3c4.5,1.1,7.5,3.7,8.8,6.9l-1.3-6.1C-0.9-0.5-1.5-0.8-2.3-0.8"/>
+		</g>
+		
+			<linearGradient id="path3041_1_" gradientUnits="userSpaceOnUse" x1="67.4623" y1="-211.7805" x2="103.0788" y2="-211.4501" gradientTransform="matrix(1 0 0 -1 -64.5 -201.6522)">
+			<stop  offset="0" style="stop-color:#191E5F"/>
+			<stop  offset="1" style="stop-color:#142787;stop-opacity:0.8185"/>
+		</linearGradient>
+		<path id="path3041" class="st5" d="M4.7,10.4C4.6,10.1,4.5,10,4.3,9.9l0.9,0.4"/>
+	</g>
+</g>
 </svg>
